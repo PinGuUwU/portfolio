@@ -17,20 +17,20 @@
                 <ul class="nav-menu">
                     <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
                     <li><a href="#valores" class="nav-link">Valores</a></li>
-                    <li><a href="#Habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
                     <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
                     <li><a href="#proyecto" class="nav-link">Proyecto</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
+                <!-- Menú para mobile -->
+                    <div class="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
             </div>
         </nav>
 
-        <!-- Menú para mobile -->
-            <div class="mobile-menu">
-                <span >&#9776;</span>
-                <span></span>
-                <span></span>
-            </div>
     </header>
 
     <main>
@@ -108,7 +108,7 @@
         </section>
 
         <!-- Sección de habilidades -->
-        <section id="#habilidades" class="section">
+        <section id="habilidades" class="section">
             <div class="section-title">Habilidades</div>
             <div class="skills-container">
                 <div class="skills-category">
@@ -158,7 +158,7 @@
         </section>
 
         <!-- Sección de experiencia -->
-        <section class="section">
+        <section id="experiencia" class="section">
             <div class="section-title">Experiencia</div>
             <div class="experience-grid">
                 <div class="experience-card">
@@ -185,7 +185,7 @@
         </section>
 
         <!-- Sección para los proyectos -->
-            <section class="section">
+            <section class="section" id="proyecto">
                 <div class="section-title">Proyectos</div>
                 <div class="projects-grid">
                     <div class="project-card">
@@ -193,7 +193,7 @@
                         <div class="project-content">
                             <div class="project-title">ConectAR-Dev (En desarrollo)</div>
                             <div class="about-text">
-                                    <p></p>
+                                    <p>Es una página web que busca conectar a personas que busquen servicios de IT con personas que ofrezcan dichos sevicios, centrado en el área IT de Argentina</p>
                                 </div>
                             <div class="project-tags">
                                 <div class="project-tag">HTML5/CSS3</div>
@@ -254,11 +254,11 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="contacto">
                 <div class="section-title">Contactame</div>
                 <div class="contact-content">
                     <p class="about-text">Gracias por tomarte el tiempo de leer mi perfil, tengo muchas ganas de crecer profesionalmente. ¡Espero que nos veamos pronto!</p>
-                    <form id="contact-form" action="https://formsubmit.co/prisredondo29@gmail.com" method="POST">
+                    <form class="contact-form" action="https://formsubmit.co/prisredondo29@gmail.com" method="POST">
                         <div class="form-group">
                             <label for="name">Nombre:</label>
                             <input type="text" name="name" placeholder="Tu nombre" required>
