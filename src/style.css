@@ -223,6 +223,7 @@ body {
         background: rgba(74, 222, 128, 0.1);
         border-radius: 10px;
         border: 1px solid rgba(74, 222, 128, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .logo-item:hover {
         transform: translateY(-5px);
@@ -331,6 +332,7 @@ body {
 
     .experience-card:hover {
         transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
     }
 
     .experience-title {
