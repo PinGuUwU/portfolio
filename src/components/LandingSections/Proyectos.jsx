@@ -21,6 +21,7 @@ const Proyectos = () => {
               description={item.description}
               tags={item.tags}
               image={item.image}
+              repoLink={item.repoLink}
             />
           ))}
         </div>
