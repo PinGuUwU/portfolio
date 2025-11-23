@@ -26,7 +26,14 @@ const NavBar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white hover:text-purple-400 hover:bg-white/5 px-4 py-2 rounded-md text-sm font-bold transition-all duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.querySelector(link.href);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-white hover:text-purple-400 hover:bg-white/5 px-4 py-2 rounded-md text-sm font-bold transition-all duration-300 cursor-pointer"
               >
                 {link.name}
               </a>
@@ -43,8 +50,15 @@ const NavBar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-gray-300 hover:text-white hover:bg-white/10 block px-3 py-3 rounded-md text-lg font-medium w-full text-center transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsOpen(false);
+                  const element = document.querySelector(link.href);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-gray-300 hover:text-white hover:bg-white/10 block px-3 py-3 rounded-md text-lg font-medium w-full text-center transition-colors cursor-pointer"
               >
                 {link.name}
               </a>

@@ -6,7 +6,7 @@ const ProyectoCard = ({ title, description, tags, image }) => {
     <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300 group h-full flex flex-col">
       {/* Image Area */}
       {image ? (
-        <div className="h-48 w-full overflow-hidden">
+        <div className="aspect-video w-full overflow-hidden">
           <img
             src={image}
             alt={title}
