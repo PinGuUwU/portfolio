@@ -2,15 +2,15 @@
 export const experienciaData = [
     {
         id: 1,
-        title: "Pasantía en Investigación",
-        institution: "Universidad de Luján (UNLu)",
-        description: "He tenido que adaptarme y aprender a utilizar distintas herramientas que desconocía, adquiriendo así conocimientos útiles. Como por ejemplo: Wikipedia, Wikidata, Zotero. Participo en investigación sobre habilidades socio-emocionales dentro de la industria 4.0."
-    },
-    {
-        id: 2,
         title: "Desarrollador Web Full-Stack",
         institution: "Fundación Pescar, Educación IT",
         description: "Un curso muy completo que tiene tanto la parte técnica como una orientación profesional, donde pude aprender a gestionar mis emociones y a comunicarme de una forma mucho más amena y asertiva. Trabajé mucho en equipo para distintas actividades de presentación."
+    },
+    {
+        id: 2,
+        title: "Pasantía en Investigación",
+        institution: "Universidad de Luján (UNLu)",
+        description: "He tenido que adaptarme y aprender a utilizar distintas herramientas que desconocía, adquiriendo así conocimientos útiles. Como por ejemplo: Wikipedia, Wikidata, Zotero. Participo en investigación sobre habilidades socio-emocionales dentro de la industria 4.0."
     },
     {
         id: 3,

@@ -2,17 +2,17 @@
 export const educationData = [
     {
         id: 1,
-        institution: "Universidad Nacional de Luján",
-        title: "Licenciatura en Sistemas de Información",
-        description: "2do/3er año en curso",
-        icon: "FaUniversity" // We will handle icons in the component
-    },
-    {
-        id: 2,
         institution: "Fundación Pescar",
         title: "Desarrollador Web Full-Stack",
         description: "Curso intensivo. Fundación L'Oréal, Fundación Karuna y Educación IT.",
         icon: "FaCode"
+    },
+    {
+        id: 2,
+        institution: "Universidad Nacional de Luján",
+        title: "Licenciatura en Sistemas de Información",
+        description: "2do/3er año en curso",
+        icon: "FaUniversity" // We will handle icons in the component
     },
     {
         id: 3,

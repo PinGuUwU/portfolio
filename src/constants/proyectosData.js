@@ -9,16 +9,16 @@ export const proyectosData = [
     },
     {
         id: 2,
-        title: 'Juego de cartas "UNO"',
-        description: "Desarrollé un juego de cartas UNO en el lenguaje de JAVA, aplicando el paradigma POO y el modelo MVC, incluyendo la posibilidad de jugar de manera LAN gracias a una librería RMI.",
-        tags: ["Java", "POO", "MVC", "RMI"],
-        image: null
-    },
-    {
-        id: 3,
         title: "Portfolio Personal",
         description: 'Gracias a lo aprendido en el curso de "Desarrollador Web Full-Stack" tuve la posibilidad de crear toda esta página web para poder presentarme en un formato más profesional.',
         tags: ["HTML5", "CSS3", "JavaScript", "IA's", "Responsive","EmailJS","React","Tailwind CSS", "Netlify", "Github"],
+        image: "/imgs/mockup portfolio.png"
+    },
+    {
+        id: 3,
+        title: 'Juego de cartas "UNO"',
+        description: "Desarrollé un juego de cartas UNO en el lenguaje de JAVA, aplicando el paradigma POO y el modelo MVC, incluyendo la posibilidad de jugar de manera LAN gracias a una librería RMI.",
+        tags: ["Java", "POO", "MVC", "RMI"],
         image: null
     },
     {

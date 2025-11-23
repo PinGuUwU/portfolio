@@ -17,7 +17,7 @@ export const habilidadesData = {
         skills: [
             "Comunicación Efectiva", "Trabajo en Equipo", "Adaptabilidad",
             "Responsabilidad", "Gestión Emocional", "Atención al Cliente",
-            "Resolución de Problemas"
+            "Resolución de Problemas", "Autodidácta"
         ]
     }
 };
