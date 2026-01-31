@@ -2,26 +2,26 @@
 export const valoresData = [
     {
         id: 1,
-        title: "Trabajo en equipo",
-        description: "El trabajo en equipo es la forma más eficiente de llevar a cabo proyectos ambiciosos.",
+        titleKey: "valores.card1.title",
+        descriptionKey: "valores.card1.desc",
         icon: "FaUsers"
     },
     {
         id: 2,
-        title: "Comunicación",
-        description: "La comunicación es el camino largo y difícil para obtener los mejores resultados posibles.",
+        titleKey: "valores.card2.title",
+        descriptionKey: "valores.card2.desc",
         icon: "FaComments"
     },
     {
         id: 3,
-        title: "Mejora continua",
-        description: "Reconocer errores es la semilla para cosechar mejoras constantes.",
+        titleKey: "valores.card3.title",
+        descriptionKey: "valores.card3.desc",
         icon: "FaChartLine"
     },
     {
         id: 4,
-        title: "Organización",
-        description: "Tener plazos de entrega es la clave para obtener buenos resultados.",
+        titleKey: "valores.card4.title",
+        descriptionKey: "valores.card4.desc",
         icon: "FaCalendarCheck"
     }
 ];

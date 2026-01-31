@@ -1,10 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Contacto = () => {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
+  const { t } = useLanguage();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,12 +17,12 @@ const Contacto = () => {
     emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
-        alert("Se envió con éxito, pronto te contactaré!");
+        alert(t('contacto.alertSuccess'));
         form.current.reset();
         setIsSending(false);
       }, (error) => {
         console.log(error.text);
-        alert("Hubo un error al enviar el mensaje. Por favor, intentá de nuevo o contactame por LinkedIn!");
+        alert(t('contacto.alertError'));
         setIsSending(false);
       });
   };
@@ -30,13 +32,13 @@ const Contacto = () => {
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
           <span className="bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-            Contactame
+            {t('contacto.title')}
           </span>
           <div className="w-24 h-1 bg-purple-500 mx-auto mt-4 rounded-full"></div>
         </h2>
 
         <p className="text-gray-300 text-center text-lg mb-12 leading-relaxed">
-          Gracias por tomarte el tiempo de leer mi perfil, tengo muchas ganas de crecer profesionalmente. ¡Agendemos una llamada!
+          {t('contacto.subtitle')}
         </p>
 
         <form
@@ -45,36 +47,36 @@ const Contacto = () => {
           className="space-y-6 bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl"
         >
           <div className="space-y-2">
-            <label htmlFor="user_name" className="text-purple-400 font-medium ml-1">Nombre:</label>
+            <label htmlFor="user_name" className="text-purple-400 font-medium ml-1">{t('contacto.name')}</label>
             <input
               type="text"
               name="user_name"
               id="user_name"
-              placeholder="Tu nombre"
+              placeholder={t('contacto.namePlaceholder')}
               required
               className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
             />
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="user_email" className="text-purple-400 font-medium ml-1">Email de contacto:</label>
+            <label htmlFor="user_email" className="text-purple-400 font-medium ml-1">{t('contacto.email')}</label>
             <input
               type="email"
               name="user_email"
               id="user_email"
-              placeholder="Tu email"
+              placeholder={t('contacto.emailPlaceholder')}
               required
               className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
             />
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="message" className="text-purple-400 font-medium ml-1">Mensaje:</label>
+            <label htmlFor="message" className="text-purple-400 font-medium ml-1">{t('contacto.message')}</label>
             <textarea
               name="message"
               id="message"
               rows="4"
-              placeholder="Tu mensaje, aclaraciones importantes y/o motivo de contacto"
+              placeholder={t('contacto.messagePlaceholder')}
               required
               className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all resize-none"
             ></textarea>
@@ -85,12 +87,12 @@ const Contacto = () => {
             disabled={isSending}
             className={`w-full bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg shadow-purple-500/25 ${isSending ? 'opacity-70 cursor-not-allowed' : ''}`}
           >
-            {isSending ? 'Enviando...' : 'Enviar'}
+            {isSending ? t('contacto.sending') : t('contacto.send')}
           </button>
         </form>
 
         <p className="text-white text-center text-lg mb-12 leading-relaxed mt-12 bg-linear-to-r from-purple-600 to-pink-600 p-4 rounded-lg">
-          Si llegaste hasta acá pero no avanzaré en el proceso de selección, agradecería mucho que me dejes feedback o que conectemos en LinkedIn para futuras búsquedas!
+          {t('contacto.feedback')}
         </p>
 
         <div className="flex justify-center gap-8 mt-12">

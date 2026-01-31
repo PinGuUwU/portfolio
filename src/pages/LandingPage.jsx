@@ -25,7 +25,7 @@ const LandingPage = () => {
         <Valores />
         <Contacto />
       </div>
-    </div>
+    </div >
   )
 }
 

@@ -1,22 +1,25 @@
 import React from 'react'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-20 text-center">
       <div className="relative z-10 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-2 tracking-tight">
+        <h1 className="text-5xl md:text-7xl font-bold mb-2 tracking-tight mt-20">
           Priscila Redondo
         </h1>
 
         <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-          <p className="">Desarrolladora Web Full-Stack</p>
+          <p className="">{t('hero.role1')}</p>
 
-          <p className="">Analista en Sistemas</p>
+          <p className="">{t('hero.role2')}</p>
         </h2>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Me gusta crear soluciones innovadoras y eficientes para resolver problemas complejos. Apasionada por Java, JavaScript y la programación orientada a objetos.
+          {t('hero.description')}
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -39,8 +42,12 @@ const Hero = () => {
             </a>
           </div>
 
+          <a href="../files/Priscila Redondo CV.pdf" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
+            {t('hero.viewCV')}
+          </a>
+
           <a download="Priscila Redondo CV.pdf" href="../files/Priscila Redondo CV.pdf" className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
-            Descargar CV
+            {t('hero.downloadCV')}
           </a>
         </div>
       </div>

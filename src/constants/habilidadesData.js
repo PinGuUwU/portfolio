@@ -1,23 +1,23 @@
 
 export const habilidadesData = {
     tecnicas: {
-        title: "Habilidades Técnicas",
-        description: "He desarrollado mis habilidades de programación tanto en los cursos que mencioné como también en trabajos que he hecho en la universidad, tanto en solitario como en equipo.",
+        titleKey: "habilidades.tecnicas.title",
+        descriptionKey: "habilidades.tecnicas.desc",
         skills: [
             "Java", "Python", "C/C++", "JavaScript", "HTML/CSS",
-            "POO", "Modelo MVC", "Bootstrap", "Tailwindcss", "Vite",
+            "habilidades.skills.oop", "habilidades.skills.mvc", "Bootstrap", "Tailwindcss", "Vite",
             "Postgresql", "SQL", "Git", "Github", "GitLab",
-            "Visual Studio Code", "IntelliJ", "Análisis de Datos",
+            "Visual Studio Code", "IntelliJ", "habilidades.skills.dataAnalysis",
             "Wikipedia/Wikidata", "Zotero"
         ]
     },
     blandas: {
-        title: "Habilidades Blandas",
-        description: "Desarrolladas gracias a todas mis experiencias tanto en anteriores trabajos como también en trabajos grupales y exposiciones grupales que he tenido.",
+        titleKey: "habilidades.blandas.title",
+        descriptionKey: "habilidades.blandas.desc",
         skills: [
-            "Comunicación Efectiva", "Trabajo en Equipo", "Adaptabilidad",
-            "Responsabilidad", "Gestión Emocional", "Atención al Cliente",
-            "Resolución de Problemas", "Autodidácta"
+            "habilidades.skills.communication", "habilidades.skills.teamwork", "habilidades.skills.adaptability",
+            "habilidades.skills.responsibility", "habilidades.skills.emotionalMgmt", "habilidades.skills.customerService",
+            "habilidades.skills.problemSolving", "habilidades.skills.selfTaught"
         ]
     }
 };
