@@ -16,10 +16,10 @@ const ValoresCard = ({ title, description, icon }) => {
 
   return (
     <div
-      className="group h-72 w-full [perspective:1000px] cursor-pointer"
+      className="group h-72 w-full perspective:[1000px] cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}
     >
-      <div className={`relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
+      <div className={`relative w-full h-full transition-all duration-500 transform:3d ${isFlipped ? '[rotateY(180deg)]' : ''}`}>
 
         {/* Front Face */}
         <div className="absolute w-full h-full bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-xl flex flex-col items-center justify-center text-center [backface-visibility:hidden] hover:bg-white/10 transition-colors">

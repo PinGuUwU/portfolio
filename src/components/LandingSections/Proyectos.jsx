@@ -25,6 +25,8 @@ const Proyectos = () => {
               tags={item.tags.map(tag => tag.startsWith('proyectos.') ? t(tag) : tag)}
               image={item.image}
               repoLink={item.repoLink}
+              demoLink={item.demoLink}
+              status={item.status}
             />
           ))}
         </div>

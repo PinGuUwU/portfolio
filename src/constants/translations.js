@@ -46,11 +46,14 @@ export const translations = {
 
         "proyectos.title": "Proyectos",
         "proyectos.repo": "Ver Repositorio",
+        "proyectos.demo": "Ver Página",
+        "proyectos.inProgress": "En Progreso",
         "proyectos.card1.desc": "Es una página web que busca conectar a personas que busquen servicios de IT con personas que ofrezcan dichos sevicios, centrado en el área IT de Argentina",
         "proyectos.card2.desc": "Gracias a lo aprendido en el curso de \"Desarrollador Web Full-Stack\" tuve la posibilidad de crear toda esta página web para poder presentarme en un formato más profesional.",
         "proyectos.card3.desc": "Desarrollé un juego de cartas UNO en el lenguaje de JAVA, aplicando el paradigma POO y el modelo MVC, incluyendo la posibilidad de jugar de manera LAN gracias a una librería RMI.",
-        "proyectos.card4.title": "Próximamente",
-        "proyectos.card4.desc": "Recién estoy comenzando mi carrera profesional, así que tengo muchos proyectos en mente y otros en desarrollo. Queda tener paciencia y seguir avanzando, espero que próximamente puedan ver mis proyectos y mi trayectoria profesional crecer.",
+        "proyectos.card4.desc": "Aplicación web interactiva full-stack que permite a los estudiantes gestionar y simular su progreso académico. Implementa un motor de reglas basado en Grafos (DAG) que calcula en tiempo real y en cascada el estado de las correlatividades.",
+        "proyectos.card5.title": "Próximamente",
+        "proyectos.card5.desc": "Recién estoy comenzando mi carrera profesional, así que tengo muchos proyectos en mente y otros en desarrollo. Queda tener paciencia y seguir avanzando, espero que próximamente puedan ver mis proyectos y mi trayectoria profesional crecer.",
         "proyectos.tag.dev": "En desarrollo",
 
         "habilidades.title": "Habilidades",
@@ -143,11 +146,14 @@ export const translations = {
 
         "proyectos.title": "Projects",
         "proyectos.repo": "View Repository",
+        "proyectos.demo": "View Page",
+        "proyectos.inProgress": "In Progress",
         "proyectos.card1.desc": "A web platform aimed at connecting people seeking IT services with those offering such services, focused on the Argentine IT sector.",
         "proyectos.card2.desc": "Thanks to what I learned in the 'Full-Stack Web Developer' course, I was able to create this entire website to present myself in a more professional format.",
         "proyectos.card3.desc": "Developed a UNO card game in Java, applying OOP paradigms and the MVC model, including the ability to play via LAN thanks to an RMI library.",
-        "proyectos.card4.title": "Coming Soon",
-        "proyectos.card4.desc": "I am just starting my professional career, so I have many projects in mind and others in development. Patience is key, and I hope you can soon see my projects and my professional trajectory grow.",
+        "proyectos.card4.desc": "Interactive full-stack web application that allows students to manage and simulate their academic progress. It implements a Graph-based (DAG) rule engine that calculates prerequisite states in real-time and in cascade.",
+        "proyectos.card5.title": "Coming Soon",
+        "proyectos.card5.desc": "I am just starting my professional career, so I have many projects in mind and others in development. Patience is key, and I hope you can soon see my projects and my professional trajectory grow.",
         "proyectos.tag.dev": "In Development",
 
         "habilidades.title": "Skills",
