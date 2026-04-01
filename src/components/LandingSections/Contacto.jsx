@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../../contexts/LanguageContext';
+import ReactGA from "react-ga4";
 
 const Contacto = () => {
   const form = useRef();
@@ -11,6 +12,9 @@ const Contacto = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
+
+    // Seguimiento de GA4 para el envío del formulario
+    ReactGA.event({ category: 'Contact', action: 'Submit Form', label: 'Contacto Section' });
 
     // Reemplaza estos valores con tus credenciales de EmailJS
     // Service ID, Template ID, Public Key
@@ -100,6 +104,7 @@ const Contacto = () => {
             href="https://github.com/PinGuUwU"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => ReactGA.event({ category: 'Social', action: 'Click GitHub', label: 'Contacto' })}
             className="p-4 bg-white/5 rounded-full text-white hover:text-purple-400 hover:bg-white/10 transition-all duration-300 border border-white/10"
           >
             <FaGithub size={32} />
@@ -108,9 +113,18 @@ const Contacto = () => {
             href="https://www.linkedin.com/in/priscila-redondo-291031219/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => ReactGA.event({ category: 'Social', action: 'Click LinkedIn', label: 'Contacto' })}
             className="p-4 bg-white/5 rounded-full text-white hover:text-purple-400 hover:bg-white/10 transition-all duration-300 border border-white/10"
           >
             <FaLinkedin size={32} />
+          </a>
+          <a
+            href="mailto:prisredondo29@gmail.com"
+            onClick={() => ReactGA.event({ category: 'Contact', action: 'Direct Email Click', label: 'Contacto' })}
+            className="p-4 bg-white/5 rounded-full text-white hover:text-purple-400 hover:bg-white/10 transition-all duration-300 border border-white/10"
+            title="prisredondo29@gmail.com"
+          >
+            <FaEnvelope size={32} />
           </a>
         </div>
       </div>

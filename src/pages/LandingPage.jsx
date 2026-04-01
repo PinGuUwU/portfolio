@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga4'
 import Hero from '../components/LandingSections/Hero'
 import SobreMi from '../components/LandingSections/SobreMi'
 import Experiencia from '../components/LandingSections/Experiencia'
@@ -8,6 +10,11 @@ import Valores from '../components/LandingSections/Valores'
 import NavBar from '../components/NavBar'
 
 const LandingPage = () => {
+  useEffect(() => {
+    // Registra la visita a la página
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "Landing Page" });
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white relative overflow-x-hidden">
       <NavBar />
@@ -19,8 +26,8 @@ const LandingPage = () => {
           <Hero />
         </div>
         <SobreMi />
-        <Experiencia />
         <Proyectos />
+        <Experiencia />
         <Habilidades />
         <Valores />
         <Contacto />

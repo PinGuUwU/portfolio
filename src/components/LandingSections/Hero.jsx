@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { useLanguage } from '../../contexts/LanguageContext';
+import ReactGA from "react-ga4";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -28,6 +29,7 @@ const Hero = () => {
               href="https://github.com/PinGuUwU"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => ReactGA.event({ category: 'Social', action: 'Click GitHub', label: 'Hero' })}
               className="text-white hover:text-purple-400 transition-colors duration-300"
             >
               <FaGithub size={32} />
@@ -36,17 +38,30 @@ const Hero = () => {
               href="https://www.linkedin.com/in/priscila-redondo-291031219/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => ReactGA.event({ category: 'Social', action: 'Click LinkedIn', label: 'Hero' })}
               className="text-white hover:text-purple-400 transition-colors duration-300"
             >
               <FaLinkedin size={32} />
             </a>
+            <a
+              href="mailto:prisredondo29@gmail.com"
+              onClick={() => ReactGA.event({ category: 'Contact', action: 'Direct Email Click', label: 'Hero' })}
+              className="text-white hover:text-purple-400 transition-colors duration-300"
+              title="prisredondo29@gmail.com"
+            >
+              <FaEnvelope size={32} />
+            </a>
           </div>
 
-          <a href="../files/Priscila Redondo CV.pdf" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
+          <a href="/files/Priscila Redondo CV.pdf" target="_blank" rel="noopener noreferrer" 
+            onClick={() => ReactGA.event({ category: 'CV', action: 'Ver CV Click', label: 'Hero' })}
+            className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
             {t('hero.viewCV')}
           </a>
 
-          <a download="Priscila Redondo CV.pdf" href="../files/Priscila Redondo CV.pdf" className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
+          <a download="Priscila Redondo CV.pdf" href="/files/Priscila Redondo CV.pdf" 
+            onClick={() => ReactGA.event({ category: 'CV', action: 'Descargar CV Click', label: 'Hero' })}
+            className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
             {t('hero.downloadCV')}
           </a>
         </div>
