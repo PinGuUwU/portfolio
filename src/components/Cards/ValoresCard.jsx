@@ -16,13 +16,16 @@ const ValoresCard = ({ title, description, icon }) => {
 
   return (
     <div
-      className="group h-72 w-full perspective:[1000px] cursor-pointer"
+      className="group h-72 w-full [perspective:1000px] cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}
     >
-      <div className={`relative w-full h-full transition-all duration-500 transform:3d ${isFlipped ? '[rotateY(180deg)]' : ''}`}>
-
+      <div 
+        className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+      >
         {/* Front Face */}
-        <div className="absolute w-full h-full bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-xl flex flex-col items-center justify-center text-center [backface-visibility:hidden] hover:bg-white/10 transition-colors">
+        <div 
+          className="absolute inset-0 w-full h-full bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-xl flex flex-col items-center justify-center text-center [backface-visibility:hidden] [transform:translateZ(1px)] hover:bg-white/10 transition-colors"
+        >
           <div className="p-4 bg-purple-500/20 rounded-full text-purple-400 mb-6 group-hover:bg-purple-500/30 transition-colors">
             <IconComponent size={32} />
           </div>
@@ -31,11 +34,12 @@ const ValoresCard = ({ title, description, icon }) => {
         </div>
 
         {/* Back Face */}
-        <div className="absolute w-full h-full bg-white/10 backdrop-blur-md border border-purple-500/30 p-8 rounded-xl flex flex-col items-center justify-center text-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+        <div 
+          className="absolute inset-0 w-full h-full bg-[#1a1a1a] backdrop-blur-md border border-purple-500/30 p-8 rounded-xl flex flex-col items-center justify-center text-center [backface-visibility:hidden] [transform:rotateY(180deg)_translateZ(1px)]"
+        >
           <h3 className="text-lg font-bold text-purple-400 mb-4">{title}</h3>
           <p className="text-gray-200 text-sm leading-relaxed">{description}</p>
         </div>
-
       </div>
     </div>
   );

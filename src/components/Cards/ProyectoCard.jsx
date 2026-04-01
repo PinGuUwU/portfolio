@@ -49,7 +49,7 @@ const ProyectoCard = ({ title, description, tags, image, repoLink, demoLink, sta
               href={demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => ReactGA.event({ category: 'Projects', action: 'View Demo', label: title })}
+              onClick={() => ReactGA.event('ver_proyecto', { tipo: 'Demo', proyecto: title })}
               className="flex-1 py-3 px-4 bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-lg text-white text-center text-sm font-bold transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 group/btn"
             >
               <span>{t('proyectos.demo')}</span>
@@ -65,7 +65,7 @@ const ProyectoCard = ({ title, description, tags, image, repoLink, demoLink, sta
               href={repoLink}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => ReactGA.event({ category: 'Projects', action: 'View Repo', label: title })}
+              onClick={() => ReactGA.event('ver_proyecto', { tipo: 'Repositorio', proyecto: title })}
               className={`py-3 px-4 rounded-lg text-white text-center text-sm font-bold transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 group/btn ${demoLink ? 'flex-1 bg-white/5 border border-white/10 hover:bg-white/10 hover:shadow-lg hover:shadow-white/5' : 'w-full bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 hover:shadow-lg hover:shadow-purple-500/25'}`}
             >
               <span>{t('proyectos.repo')}</span>

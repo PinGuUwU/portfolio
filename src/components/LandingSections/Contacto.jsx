@@ -14,7 +14,7 @@ const Contacto = () => {
     setIsSending(true);
 
     // Seguimiento de GA4 para el envío del formulario
-    ReactGA.event({ category: 'Contact', action: 'Submit Form', label: 'Contacto Section' });
+    ReactGA.event('envio_formulario_contacto', { status: 'iniciado' });
 
     // Reemplaza estos valores con tus credenciales de EmailJS
     // Service ID, Template ID, Public Key
@@ -104,7 +104,7 @@ const Contacto = () => {
             href="https://github.com/PinGuUwU"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => ReactGA.event({ category: 'Social', action: 'Click GitHub', label: 'Contacto' })}
+            onClick={() => ReactGA.event('click_red_social', { plataforma: 'GitHub', seccion: 'Contacto' })}
             className="p-4 bg-white/5 rounded-full text-white hover:text-purple-400 hover:bg-white/10 transition-all duration-300 border border-white/10"
           >
             <FaGithub size={32} />
@@ -113,14 +113,14 @@ const Contacto = () => {
             href="https://www.linkedin.com/in/priscila-redondo-291031219/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => ReactGA.event({ category: 'Social', action: 'Click LinkedIn', label: 'Contacto' })}
+            onClick={() => ReactGA.event('click_red_social', { plataforma: 'LinkedIn', seccion: 'Contacto' })}
             className="p-4 bg-white/5 rounded-full text-white hover:text-purple-400 hover:bg-white/10 transition-all duration-300 border border-white/10"
           >
             <FaLinkedin size={32} />
           </a>
           <a
             href="mailto:prisredondo29@gmail.com"
-            onClick={() => ReactGA.event({ category: 'Contact', action: 'Direct Email Click', label: 'Contacto' })}
+            onClick={() => ReactGA.event('click_contacto_directo', { tipo: 'Email', seccion: 'Contacto' })}
             className="p-4 bg-white/5 rounded-full text-white hover:text-purple-400 hover:bg-white/10 transition-all duration-300 border border-white/10"
             title="prisredondo29@gmail.com"
           >
