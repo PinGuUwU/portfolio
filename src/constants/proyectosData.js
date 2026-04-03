@@ -2,9 +2,9 @@
 export const proyectosData = [
     {
         id: 4,
-        title: "Simulador de Correlativas - UNLu",
+        title: "🎓 Simulador de Avance Académico",
         descriptionKey: "proyectos.card4.desc",
-        tags: ["Reactjs", "Node.js", "Express", "MongoDB", "TailwindCSS", "HeroUI"],
+        tags: ["React", "Firebase", "Graph Theory", "Tailwind CSS"],
         image: "/imgs/mockup simulador correlativas.png",
         repoLink: "https://github.com/PinGuUwU/simulador-correlativas",
         demoLink: "https://simulador-unlu-sistemas.netlify.app/",
@@ -12,26 +12,26 @@ export const proyectosData = [
     },
     {
         id: 1,
-        title: "ConectAR-Dev",
+        title: "💼 ConectAR-DEV (Marketplace Freelance)",
         descriptionKey: "proyectos.card1.desc",
-        tags: ["HTML5/CSS3", "JavaScript", "Reactjs", "Tailwindcss", "Bootstrap", "GitHub", "MongoDB"],
+        tags: ["React 19", "Node.js (Express 5)", "MongoDB", "JWT"],
         image: "/imgs/mockup conectar-dev.png",
         repoLink: "https://github.com/Soriez/ConectAR-DEV",
         demoLink: "https://conectar-dev.netlify.app/"
     },
     {
         id: 2,
-        title: "Portfolio Personal",
+        title: "✨ Portfolio Personal y Telemetría",
         descriptionKey: "proyectos.card2.desc",
-        tags: ["HTML5", "CSS3", "JavaScript", "IA's", "Responsive", "EmailJS", "React", "Tailwind CSS", "Netlify", "Github"],
+        tags: ["React 19", "Tailwind 4", "ReactGA 4", "EmailJS"],
         image: "/imgs/mockup portfolio.png",
         repoLink: "https://github.com/PinGuUwU/portfolio"
     },
     {
         id: 3,
-        title: 'Juego de cartas "UNO"',
+        title: "🃏 UNO Multiplayer Java",
         descriptionKey: "proyectos.card3.desc",
-        tags: ["Java", "POO", "MVC", "RMI"],
+        tags: ["Java 17+", "Java RMI", "JUnit", "MVC"],
         image: "/imgs/cartas-uno.jpg",
         repoLink: "https://github.com/PinGuUwU/Juego-de-cartas-UNO-offline-LAN"
     },

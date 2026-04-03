@@ -33,9 +33,10 @@ const ProyectoCard = ({ title, description, tags, image, repoLink, demoLink, sta
 
       <div className="p-6 flex flex-col grow">
         <h3 className="text-xl font-bold text-purple-400 mb-4">{title}</h3>
-        <p className="text-gray-400 text-sm leading-relaxed mb-6 grow">
-          {description}
-        </p>
+        <div 
+          className="text-gray-400 text-sm leading-relaxed mb-6 grow"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
 
         <div className="flex flex-wrap gap-2 mt-auto mb-6">
           {tags.map((tag, index) => (
