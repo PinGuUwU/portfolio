@@ -4,11 +4,13 @@ export const habilidadesData = {
         titleKey: "habilidades.tecnicas.title",
         descriptionKey: "habilidades.tecnicas.desc",
         skills: [
-            "Java", "Python", "C/C++", "JavaScript", "HTML/CSS",
-            "habilidades.skills.oop", "habilidades.skills.mvc", "Bootstrap", "Tailwindcss", "Vite",
-            "Postgresql", "SQL", "Git", "Github", "GitLab",
-            "Visual Studio Code", "IntelliJ", "habilidades.skills.dataAnalysis",
-            "Wikipedia/Wikidata", "Zotero"
+            "Java", "Apex (Salesforce)", "JavaScript", "Python", "Node.js", "C/C++",
+            "React 19", "LWC (Salesforce)", "Tailwindcss 4", "Vite", "Bootstrap",
+            "habilidades.skills.oop", "habilidades.skills.mvc", 
+            "Postgresql", "MongoDB", "SQL", "SOQL",
+            "Git", "Github", "Trello", "Salesforce Flow Builder",
+            "Linux (Mint)", "Visual Studio Code", "IntelliJ", 
+            "habilidades.skills.dataAnalysis", "Wikipedia/Wikidata", "Zotero"
         ]
     },
     blandas: {
@@ -17,7 +19,8 @@ export const habilidadesData = {
         skills: [
             "habilidades.skills.communication", "habilidades.skills.teamwork", "habilidades.skills.adaptability",
             "habilidades.skills.responsibility", "habilidades.skills.emotionalMgmt", "habilidades.skills.customerService",
-            "habilidades.skills.problemSolving", "habilidades.skills.selfTaught"
+            "habilidades.skills.problemSolving", "habilidades.skills.selfTaught",
+            "habilidades.skills.fastLearning", "habilidades.skills.analyticalThinking"
         ]
     }
 };

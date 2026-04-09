@@ -1,10 +1,11 @@
 import React from 'react';
-import { FaUniversity, FaCode, FaMicroscope } from 'react-icons/fa';
+import { FaUniversity, FaCode, FaMicroscope, FaSalesforce } from 'react-icons/fa';
 
 const iconMap = {
     FaUniversity: FaUniversity,
     FaCode: FaCode,
-    FaMicroscope: FaMicroscope
+    FaMicroscope: FaMicroscope,
+    FaSalesforce: FaSalesforce
 };
 
 import { useLanguage } from '../contexts/LanguageContext';
