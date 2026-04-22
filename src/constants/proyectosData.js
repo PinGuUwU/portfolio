@@ -2,9 +2,9 @@
 export const proyectosData = [
     {
         id: 4,
-        title: "🎓 Simulador de Avance Académico",
+        title: "🎓 Mi Avance Académico",
         descriptionKey: "proyectos.card4.desc",
-        tags: ["React", "Firebase", "Graph Theory", "Tailwind CSS"],
+        tags: ["React 19", "Firebase", "Graph Theory", "UX/UI"],
         image: "/imgs/mockup simulador correlativas.png",
         repoLink: "https://github.com/PinGuUwU/simulador-correlativas",
         demoLink: "https://simulador-unlu-sistemas.netlify.app/",
