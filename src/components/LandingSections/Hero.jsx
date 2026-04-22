@@ -53,13 +53,13 @@ const Hero = () => {
             </a>
           </div>
 
-          <a href="/files/Priscila Redondo CV.pdf" target="_blank" rel="noopener noreferrer" 
+          <a href="files/Priscila Redondo CV.pdf" target="_blank" rel="noopener noreferrer" 
             onClick={() => ReactGA.event('interaccion_cv', { accion: 'Ver', seccion: 'Hero' })}
             className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
             {t('hero.viewCV')}
           </a>
 
-          <a download="Priscila Redondo CV.pdf" href="/files/Priscila Redondo CV.pdf" 
+          <a download="Priscila Redondo CV.pdf" href="files/Priscila Redondo CV.pdf" 
             onClick={() => ReactGA.event('interaccion_cv', { accion: 'Descargar', seccion: 'Hero' })}
             className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 border border-white/10 backdrop-blur-sm">
             {t('hero.downloadCV')}

@@ -5,7 +5,7 @@ export const proyectosData = [
         title: "🎓 Mi Avance Académico",
         descriptionKey: "proyectos.card4.desc",
         tags: ["React 19", "Firebase", "Graph Theory", "UX/UI"],
-        image: "/imgs/mockup simulador correlativas.png",
+        image: "imgs/mockup simulador correlativas.png",
         repoLink: "https://github.com/PinGuUwU/simulador-correlativas",
         demoLink: "https://simulador-unlu-sistemas.netlify.app/",
         status: "in-progress"
@@ -15,7 +15,7 @@ export const proyectosData = [
         title: "💼 ConectAR-DEV (Marketplace Freelance)",
         descriptionKey: "proyectos.card1.desc",
         tags: ["React 19", "Node.js (Express 5)", "MongoDB", "JWT"],
-        image: "/imgs/mockup conectar-dev.png",
+        image: "imgs/mockup conectar-dev.png",
         repoLink: "https://github.com/Soriez/ConectAR-DEV",
         demoLink: "https://conectar-dev.netlify.app/"
     },
@@ -24,7 +24,7 @@ export const proyectosData = [
         title: "✨ Portfolio Personal y Telemetría",
         descriptionKey: "proyectos.card2.desc",
         tags: ["React 19", "Tailwind 4", "ReactGA 4", "EmailJS"],
-        image: "/imgs/mockup portfolio.png",
+        image: "imgs/mockup portfolio.png",
         repoLink: "https://github.com/PinGuUwU/portfolio"
     },
     {
@@ -32,7 +32,7 @@ export const proyectosData = [
         title: "🃏 UNO Multiplayer Java",
         descriptionKey: "proyectos.card3.desc",
         tags: ["Java 17+", "Java RMI", "JUnit", "MVC"],
-        image: "/imgs/cartas-uno.jpg",
+        image: "imgs/cartas-uno.jpg",
         repoLink: "https://github.com/PinGuUwU/Juego-de-cartas-UNO-offline-LAN"
     },
     {
@@ -40,7 +40,7 @@ export const proyectosData = [
         titleKey: "proyectos.card5.title",
         descriptionKey: "proyectos.card5.desc",
         tags: ["proyectos.tag.dev"],
-        image: "/imgs/foto-graduacion.jpg",
+        image: "imgs/foto-graduacion.jpg",
         repoLink: "https://github.com/PinGuUwU"
     }
 ];
