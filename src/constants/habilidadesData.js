@@ -7,9 +7,9 @@ export const habilidadesData = {
             "Java", "Apex (Salesforce)", "JavaScript", "Python", "Node.js", "C/C++",
             "React 19", "LWC (Salesforce)", "Tailwindcss 4", "Vite", "Bootstrap",
             "habilidades.skills.oop", "habilidades.skills.mvc", 
-            "Postgresql", "MongoDB", "SQL", "SOQL",
+            "Postgresql", "MongoDB", "SQL", "SOQL", "SOSL",
             "Git", "Github", "Trello", "Salesforce Flow Builder",
-            "Linux (Mint)", "Visual Studio Code", "IntelliJ", 
+            "Linux", "Visual Studio Code", "IntelliJ", 
             "habilidades.skills.dataAnalysis", "Wikipedia/Wikidata", "Zotero"
         ]
     },

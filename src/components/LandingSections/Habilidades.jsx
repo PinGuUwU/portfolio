@@ -7,38 +7,32 @@ import { FaCode, FaServer, FaCloud, FaCog, FaUsers } from 'react-icons/fa';
 const Habilidades = () => {
   const { t } = useLanguage();
 
-  const skillCategories = [
-    {
-      icon: FaCode,
-      title: "Frontend",
-      color: "from-blue-500 to-blue-600",
-      skills: ["React 19", "TypeScript", "Next.js", "Tailwindcss 4", "Vite", "Bootstrap"]
-    },
-    {
-      icon: FaServer,
-      title: "Backend",
-      color: "from-green-500 to-green-600",
-      skills: ["Node.js", "Express", "Python", "Java", "PostgreSQL", "MongoDB"]
-    },
-    {
-      icon: FaCloud,
-      title: "Cloud & DevOps",
-      color: "from-purple-500 to-purple-600",
-      skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Git", "Github"]
-    },
-    {
-      icon: FaCog,
-      title: "Herramientas",
-      color: "from-orange-500 to-orange-600",
-      skills: ["Visual Studio Code", "IntelliJ", "Linux (Mint)", "Trello", "Salesforce Flow"]
-    },
-    {
-      icon: FaUsers,
-      title: "Soft Skills",
-      color: "from-pink-500 to-pink-600",
-      skills: ["Comunicación", "Trabajo en Equipo", "Liderazgo", "Adaptabilidad", "Resolución de Problemas"]
-    }
-  ];
+const skillCategories = [
+  {
+    icon: FaCode,
+    title: "Frontend",
+    color: "from-blue-500 to-blue-600",
+    skills: ["React 19", "JavaScript", "Next.js", "Tailwindcss 4", "Vite"]
+  },
+  {
+    icon: FaServer,
+    title: "Backend & CRM",
+    color: "from-green-500 to-green-600",
+    skills: ["Node.js", "Express", "Apex", "Java", "MongoDB", "PostgreSQL", "SOQL"]
+  },
+  {
+    icon: FaCloud,
+    title: "Cloud & DevOps",
+    color: "from-purple-500 to-purple-600",
+    skills: ["CI/CD", "Docker", "AWS"]
+  },
+  {
+    icon: FaCog,
+    title: "Herramientas & SO",
+    color: "from-orange-500 to-orange-600",
+    skills: ["Git", "GitHub", "Linux", "Visual Studio Code", "IntelliJ", "Postman"]
+  }
+];
 
   return (
     <section id="habilidades" className="py-20 px-6 md:px-20 relative">
